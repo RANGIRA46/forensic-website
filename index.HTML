@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-7">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0-beta3/css/all.min.css">
+    <title>Forensic Psychology</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Forensic Psychology</h2>
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#presentations">Presentations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-container">
+        <h2>Forensic Psychology</h2>
+            <a href="#presentations" class="hero-btn"><em>View Presentations</em></a>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about section-container">
+        <h2>About Us</h2>
+        <p>
+            Welcome to our Forensic Psychology class! In this course, we delve into the fascinating intersection of psychology and the legal system.
+        </p>
+    </section>
+
+    <!-- Presentations Section -->
+    <section id="presentations" class="presentations section-container">
+        <h2>Presentations</h2>
+        <div class="presentation-links">
+            <div class="presentation-card" onclick="showPresentation(0)">
+                <h3>Presentation 1</h3>
+                <p>Why Do People Commit Raping On Children.</p>
+            </div>
+            <div class="presentation-card" onclick="showPresentation(1)">
+                <h3>Presentation 2</h3>
+                <p>Why Prostitute Are Potential Criminals.</p>
+            </div>
+            <div class="presentation-card" onclick="showPresentation(2)">
+                <h3>Presentation 3</h3>
+                <p>Why Do People Lie.</p>
+            </div>
+        </div>
+
+        <!-- Presentation Viewer with Slide Navigation -->
+        <div id="presentation-viewer" class="presentation-viewer" style="display:none;">
+            <div class="presentation-header">
+               <span id="close-presentation" class="close-btn">&times;</span>
+                <button id="print-presentation" class="btn">Print <i class="fas fa-print"></i></button>
+            </div>
+            <h2>Presentation Viewer</h2>
+            <!-- Updated: use img instead of iframe -->
+            <img id="presentation-image" width="100%" height="600px" style="object-fit: contain;" />
+            <div class="presentation-controls">
+                <button id="prev-slide" class="btn"><i class="fas fa-arrow-left"></i> Prev Slide</button>
+                <button id="next-slide" class="btn">Next Slide <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-container">
+        <h2>Contact Us</h2>
+        <form action="mailto:johnsonbaraka46@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+
+        <div class="phone-container">
+            <p>Call Us On <i class="fas fa-phone"></i></p>
+            <span>(+250) 788-617-622</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Forensic Psychology Website</p>
+        <div class="social-icons">
+            <a href="https://wa.me/+250788617622" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://x.com/BARAKAJohnson9" target="_blank" title="X"><i class="fab fa-x"></i></a>
+            <a href="https://www.linkedin.com/in/johnson-baraka-0772932a6/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/johnsonrangira/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.reddit.com/user/No-Collection8523/" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+            <a href="https://github.com/RANGIRA46" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
